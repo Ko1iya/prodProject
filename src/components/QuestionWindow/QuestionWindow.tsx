@@ -1,3 +1,5 @@
+import { v4 as uuid } from "uuid"
+
 import Button from "../Button/Button"
 import ProgressBar from "../ProgressBar/ProgressBar"
 import Variant from "../Variant/Variant"
@@ -44,7 +46,7 @@ function QuestionWindow({
         <Variant
           stateButton={stateButton}
           text={variant}
-          key={index}
+          key={uuid()}
           answer={answer}
           correct={index === correct}
           upCorAnsw={upCorAnsw}
